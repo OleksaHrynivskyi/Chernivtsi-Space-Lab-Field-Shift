@@ -46,6 +46,14 @@ NASS_API_KEY=...      # optional, real USDA prices: https://quickstats.nass.usda
 
 The three demo fields (Iowa, Kansas, North Carolina) work without keys, their data is saved in `backend/cache`.
 
+## Deploy
+
+The backend can serve the built frontend, so one web service is enough (we use Render).
+
+- Build command: `pip install -r backend/requirements.txt && cd frontend && npm install && npm run build`
+- Start command: `cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT`
+- Environment variables: `EARTHDATA_TOKEN`, `NASS_API_KEY`
+
 ## Data sources
 
 | Source | What we take | Key |
@@ -84,7 +92,6 @@ frontend/
   src/pages/          Field, Suggestion, Options, Report, Statistics, How it works
   src/components/     map, calendar, charts
   src/i18n.jsx        translations
-docs/                 challenge description
 ```
 
 ## API

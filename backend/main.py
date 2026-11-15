@@ -4,10 +4,12 @@
 Потикати ендпоінти можна тут: http://127.0.0.1:8000/docs
 """
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 import requests
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from services import cache, cdl, earthdata, gaez, nass, ndvi, power, soil, strategies, texts
@@ -218,3 +220,11 @@ def build(request: StrategyRequest):
         "scenario": request.scenario,
         "strategies": strategies.build_strategies(field_data, request.priorities, request.constraints, request.scenario, request.lang, request.units),
     }
+
+
+# на хостингу бекенд сам віддає зібраний фронтенд (frontend/dist), щоб сайт і API були на одній адресі.
+# локально цієї папки може не бути, тоді фронтенд запускаємо окремо через npm run dev.
+# має стояти в кінці файлу, після всіх /api
+DIST = Path(__file__).resolve().parent.parent / "frontend" / "dist"
+if DIST.exists():
+    app.mount("/", StaticFiles(directory=DIST, html=True), name="frontend")
