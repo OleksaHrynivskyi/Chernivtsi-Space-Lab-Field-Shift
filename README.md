@@ -11,6 +11,21 @@ alternatives. For every option it shows a score, the reasons, the data behind it
 check with a local agronomist. It works for the 48 contiguous states. The interface is in
 English and Ukrainian.
 
+## Live demo
+
+The site is online in two places:
+
+- https://chernivtsi-space-lab-field-shift.onrender.com/
+- https://chernivtsi-space-lab-field-shift-production.up.railway.app/
+
+Both links open the same site. We host it twice because the free servers are small:
+if the Railway link does not open or is too slow, try the Render one (and the other way around).
+The Render server sleeps when nobody uses it, so the first load can take about a minute.
+
+The three demo fields open right away. A new field can take 1-2 minutes. Sometimes the
+USDA crop map service (CropScape) does not answer, then the site shows a message and you
+can try again in a few minutes.
+
 ## How to run
 
 You need Python 3.11+ and Node.js.
