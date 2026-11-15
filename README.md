@@ -121,6 +121,10 @@ frontend/
 | GET | `/api/ndvi?lat=42.1&lon=-93.55` | peak NDVI for each season |
 | GET | `/api/geocode?q=Ames, Iowa` | coordinates of a place |
 
+## Use of AI
+
+We used artificial intelligence to generate the website design (Figma AI) and for routine coding tasks (Claude AI)
+
 ## What is our estimate, not data
 
 Some crop traits in `crops.json` (the `estimated` part: heat tolerance, residue, income without
