@@ -1,0 +1,23 @@
+{
+  "_sources": {
+    "water need, water deficit, suitability": "Not stored here: taken per field from FAO GAEZ v4 (2011-2040 and 2041-2070, RCP4.5, mean of 5 climate models) by services/gaez.py.",
+    "n_fixing, family, kind, small_grain": "Basic agronomy: legumes (soybean, alfalfa, peanuts, dry beans, clover) fix nitrogen.",
+    "estimated": "Team estimates on a 1-5 scale (cover_water_mm in mm) - should be checked with a local agronomist. Cover crops are killed in spring, so they use only part of a full-season crop's water.",
+    "plant, harvest": "Typical US dates MM-DD (team estimate, varies by region)."
+  },
+  "corn":         {"name": "Corn", "name_uk": "Кукурудза",               "family": "grass",  "kind": "main",  "n_fixing": false, "small_grain": false, "plant": "05-01", "harvest": "10-15", "estimated": {"heat_tolerance": 3, "residue": 4, "income": 5}},
+  "soybean":      {"name": "Soybean", "name_uk": "Соя",            "family": "legume", "kind": "main",  "n_fixing": true,  "small_grain": false, "plant": "05-15", "harvest": "10-05", "estimated": {"heat_tolerance": 3, "residue": 2, "income": 4}},
+  "winter_wheat": {"name": "Winter wheat", "name_uk": "Озима пшениця",       "family": "grass",  "kind": "main",  "n_fixing": false, "small_grain": true,  "plant": "10-01", "harvest": "07-01", "estimated": {"heat_tolerance": 2, "residue": 3, "income": 3}},
+  "spring_wheat": {"name": "Spring wheat", "name_uk": "Яра пшениця",       "family": "grass",  "kind": "main",  "n_fixing": false, "small_grain": true,  "plant": "04-10", "harvest": "08-10", "estimated": {"heat_tolerance": 2, "residue": 3, "income": 3}},
+  "oats":         {"name": "Oats", "name_uk": "Овес",               "family": "grass",  "kind": "main",  "n_fixing": false, "small_grain": true,  "plant": "04-01", "harvest": "07-20", "estimated": {"heat_tolerance": 1, "residue": 3, "income": 2}},
+  "sorghum":      {"name": "Sorghum", "name_uk": "Сорго",            "family": "grass",  "kind": "main",  "n_fixing": false, "small_grain": false, "plant": "05-20", "harvest": "10-20", "estimated": {"heat_tolerance": 5, "residue": 4, "income": 3}},
+  "sunflower":    {"name": "Sunflower", "name_uk": "Соняшник",          "family": "aster",  "kind": "main",  "n_fixing": false, "small_grain": false, "plant": "05-25", "harvest": "10-01", "estimated": {"heat_tolerance": 4, "residue": 2, "income": 3}},
+  "cotton":       {"name": "Cotton", "name_uk": "Бавовна",             "family": "mallow", "kind": "main",  "n_fixing": false, "small_grain": false, "plant": "05-01", "harvest": "10-31", "estimated": {"heat_tolerance": 5, "residue": 1, "income": 4}},
+  "alfalfa":      {"name": "Alfalfa (hay)", "name_uk": "Люцерна (сіно)",      "family": "legume", "kind": "main",  "n_fixing": true,  "small_grain": false, "plant": "04-15", "harvest": "10-01", "estimated": {"heat_tolerance": 3, "residue": 4, "income": 4}},
+  "barley":       {"name": "Barley", "name_uk": "Ячмінь",                    "family": "grass",   "kind": "main",  "n_fixing": false, "small_grain": true,  "plant": "04-10", "harvest": "08-01", "estimated": {"heat_tolerance": 2, "residue": 3, "income": 3}},
+  "canola":       {"name": "Canola", "name_uk": "Ріпак",                      "family": "mustard", "kind": "main",  "n_fixing": false, "small_grain": false, "plant": "04-25", "harvest": "08-20", "estimated": {"heat_tolerance": 2, "residue": 2, "income": 3}},
+  "peanuts":      {"name": "Peanuts", "name_uk": "Арахіс",                    "family": "legume",  "kind": "main",  "n_fixing": true,  "small_grain": false, "plant": "05-01", "harvest": "10-15", "estimated": {"heat_tolerance": 4, "residue": 1, "income": 4}},
+  "dry_beans":    {"name": "Dry beans", "name_uk": "Квасоля",                 "family": "legume",  "kind": "main",  "n_fixing": true,  "small_grain": false, "plant": "06-01", "harvest": "09-15", "estimated": {"heat_tolerance": 2, "residue": 1, "income": 3}},
+  "cereal_rye":   {"name": "Cereal rye (cover)", "name_uk": "Озиме жито (покривна)", "family": "grass",  "kind": "cover", "n_fixing": false, "small_grain": false, "plant": "10-20", "harvest": "04-25", "estimated": {"heat_tolerance": 2, "residue": 3, "income": 0, "cover_water_mm": 75}},
+  "clover":       {"name": "Red clover (cover)", "name_uk": "Червона конюшина (покривна)", "family": "legume", "kind": "cover", "n_fixing": true,  "small_grain": false, "plant": "07-15", "harvest": "04-20", "estimated": {"heat_tolerance": 2, "residue": 3, "income": 0, "cover_water_mm": 75}}
+}
