@@ -1,0 +1,14 @@
+{
+ "state": "Iowa",
+ "revenue_per_acre": {
+  "corn": 881,
+  "soybean": 624,
+  "winter_wheat": 382,
+  "spring_wheat": 200,
+  "oats": 257,
+  "sorghum": 344,
+  "alfalfa": 472,
+  "barley": 261
+ },
+ "source": "USDA NASS QuickStats 2016+"
+}

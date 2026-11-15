@@ -1,0 +1,199 @@
+{
+ "source": "NASA POWER 2001-2025",
+ "years": 25,
+ "frost_free_days": 205,
+ "last_spring_frost": "Apr 14",
+ "first_fall_frost": "Oct 27",
+ "late_frost_years_per_10": 0,
+ "gdd_base10": 2421,
+ "season_rain_mm": 474,
+ "heat_days_35c": 32.7,
+ "heavy_rain_days_25mm": 5.3,
+ "monthly": [
+  {
+   "month": 1,
+   "tavg": -0.4,
+   "rain_mm": 21
+  },
+  {
+   "month": 2,
+   "tavg": 1.2,
+   "rain_mm": 24
+  },
+  {
+   "month": 3,
+   "tavg": 7.8,
+   "rain_mm": 47
+  },
+  {
+   "month": 4,
+   "tavg": 13.4,
+   "rain_mm": 63
+  },
+  {
+   "month": 5,
+   "tavg": 19.1,
+   "rain_mm": 127
+  },
+  {
+   "month": 6,
+   "tavg": 25.0,
+   "rain_mm": 113
+  },
+  {
+   "month": 7,
+   "tavg": 27.7,
+   "rain_mm": 91
+  },
+  {
+   "month": 8,
+   "tavg": 26.5,
+   "rain_mm": 100
+  },
+  {
+   "month": 9,
+   "tavg": 21.9,
+   "rain_mm": 63
+  },
+  {
+   "month": 10,
+   "tavg": 14.2,
+   "rain_mm": 63
+  },
+  {
+   "month": 11,
+   "tavg": 6.9,
+   "rain_mm": 32
+  },
+  {
+   "month": 12,
+   "tavg": 1.1,
+   "rain_mm": 27
+  }
+ ],
+ "trends": {
+  "season_rain_mm_per_decade": 38.79
+ },
+ "series": {
+  "season_rain": [
+   {
+    "year": 2001,
+    "value": 449
+   },
+   {
+    "year": 2002,
+    "value": 427
+   },
+   {
+    "year": 2003,
+    "value": 373
+   },
+   {
+    "year": 2004,
+    "value": 502
+   },
+   {
+    "year": 2005,
+    "value": 504
+   },
+   {
+    "year": 2006,
+    "value": 464
+   },
+   {
+    "year": 2007,
+    "value": 588
+   },
+   {
+    "year": 2008,
+    "value": 565
+   },
+   {
+    "year": 2009,
+    "value": 474
+   },
+   {
+    "year": 2010,
+    "value": 531
+   },
+   {
+    "year": 2011,
+    "value": 241
+   },
+   {
+    "year": 2012,
+    "value": 250
+   },
+   {
+    "year": 2013,
+    "value": 586
+   },
+   {
+    "year": 2014,
+    "value": 504
+   },
+   {
+    "year": 2015,
+    "value": 582
+   },
+   {
+    "year": 2016,
+    "value": 680
+   },
+   {
+    "year": 2017,
+    "value": 364
+   },
+   {
+    "year": 2018,
+    "value": 582
+   },
+   {
+    "year": 2019,
+    "value": 752
+   },
+   {
+    "year": 2020,
+    "value": 418
+   },
+   {
+    "year": 2021,
+    "value": 467
+   },
+   {
+    "year": 2022,
+    "value": 447
+   },
+   {
+    "year": 2023,
+    "value": 430
+   },
+   {
+    "year": 2024,
+    "value": 446
+   },
+   {
+    "year": 2025,
+    "value": 729
+   }
+  ]
+ },
+ "year_types": {
+  "dry": [
+   2011,
+   2012,
+   2017,
+   2003,
+   2020
+  ],
+  "wet": [
+   2013,
+   2007,
+   2016,
+   2025,
+   2019
+  ]
+ },
+ "dry_year_rain_mm": 329,
+ "wet_year_rain_mm": 667
+}

@@ -1,0 +1,174 @@
+{
+ "crops": {
+  "corn": {
+   "suitable": true,
+   "now": {
+    "need_mm": 926,
+    "deficit_mm": 317
+   },
+   "future": {
+    "need_mm": 892,
+    "deficit_mm": 316
+   }
+  },
+  "soybean": {
+   "suitable": true,
+   "now": {
+    "need_mm": 543,
+    "deficit_mm": 131
+   },
+   "future": {
+    "need_mm": 614,
+    "deficit_mm": 212
+   }
+  },
+  "winter_wheat": {
+   "suitable": true,
+   "now": {
+    "need_mm": 635,
+    "deficit_mm": 176
+   },
+   "future": {
+    "need_mm": 649,
+    "deficit_mm": 212
+   }
+  },
+  "spring_wheat": {
+   "suitable": true,
+   "now": {
+    "need_mm": 493,
+    "deficit_mm": 51
+   },
+   "future": {
+    "need_mm": 511,
+    "deficit_mm": 95
+   }
+  },
+  "oats": {
+   "suitable": true,
+   "now": {
+    "need_mm": 481,
+    "deficit_mm": 42
+   },
+   "future": {
+    "need_mm": 492,
+    "deficit_mm": 72
+   }
+  },
+  "sorghum": {
+   "suitable": true,
+   "now": {
+    "need_mm": 858,
+    "deficit_mm": 245
+   },
+   "future": {
+    "need_mm": 901,
+    "deficit_mm": 288
+   }
+  },
+  "sunflower": {
+   "suitable": true,
+   "now": {
+    "need_mm": 461,
+    "deficit_mm": 56
+   },
+   "future": {
+    "need_mm": 445,
+    "deficit_mm": 67
+   }
+  },
+  "cotton": {
+   "suitable": true,
+   "now": {
+    "need_mm": 914,
+    "deficit_mm": 401
+   },
+   "future": {
+    "need_mm": 949,
+    "deficit_mm": 462
+   }
+  },
+  "alfalfa": {
+   "suitable": true,
+   "now": {
+    "need_mm": 1253,
+    "deficit_mm": 475
+   },
+   "future": {
+    "need_mm": 1342,
+    "deficit_mm": 583
+   }
+  },
+  "cereal_rye": {
+   "suitable": true,
+   "now": {
+    "need_mm": 535,
+    "deficit_mm": 68
+   },
+   "future": {
+    "need_mm": 523,
+    "deficit_mm": 90
+   }
+  },
+  "clover": {
+   "suitable": true,
+   "now": {
+    "need_mm": 960,
+    "deficit_mm": 195
+   },
+   "future": {
+    "need_mm": 1026,
+    "deficit_mm": 276
+   }
+  },
+  "barley": {
+   "suitable": true,
+   "now": {
+    "need_mm": 629,
+    "deficit_mm": 172
+   },
+   "future": {
+    "need_mm": 642,
+    "deficit_mm": 208
+   }
+  },
+  "canola": {
+   "suitable": true,
+   "now": {
+    "need_mm": 646,
+    "deficit_mm": 148
+   },
+   "future": {
+    "need_mm": 626,
+    "deficit_mm": 177
+   }
+  },
+  "peanuts": {
+   "suitable": true,
+   "now": {
+    "need_mm": 615,
+    "deficit_mm": 248
+   },
+   "future": {
+    "need_mm": 570,
+    "deficit_mm": 236
+   }
+  },
+  "dry_beans": {
+   "suitable": true,
+   "now": {
+    "need_mm": 544,
+    "deficit_mm": 95
+   },
+   "future": {
+    "need_mm": 571,
+    "deficit_mm": 143
+   }
+  }
+ },
+ "source": "FAO GAEZ v4, rain-fed, high input, RCP4.5, mean of 5 climate models",
+ "periods": {
+  "now": "2011-2040",
+  "future": "2041-2070"
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "source": "NASA MODIS MOD13Q1 (Terra, 250 m, 16-day), ORNL DAAC",
+ "years": [
+  {
+   "year": 2016,
+   "peak": 0.931
+  },
+  {
+   "year": 2017,
+   "peak": 0.918
+  },
+  {
+   "year": 2018,
+   "peak": 0.912
+  },
+  {
+   "year": 2019,
+   "peak": 0.932
+  },
+  {
+   "year": 2020,
+   "peak": 0.899
+  },
+  {
+   "year": 2021,
+   "peak": 0.919
+  },
+  {
+   "year": 2022,
+   "peak": 0.942
+  },
+  {
+   "year": 2023,
+   "peak": 0.919
+  },
+  {
+   "year": 2024,
+   "peak": 0.93
+  },
+  {
+   "year": 2025,
+   "peak": 0.941
+  }
+ ]
+}

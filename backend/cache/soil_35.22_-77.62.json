@@ -1,0 +1,8 @@
+{
+ "source": "USDA SSURGO",
+ "area": "Lenoir County, North Carolina",
+ "name": "Norfolk",
+ "slope_pct": 1.0,
+ "organic_matter_pct": 1.5,
+ "k_factor": 0.1
+}

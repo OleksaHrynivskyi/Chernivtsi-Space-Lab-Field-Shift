@@ -1,0 +1,16 @@
+{
+ "state": "Kansas",
+ "revenue_per_acre": {
+  "corn": 638,
+  "soybean": 470,
+  "winter_wheat": 291,
+  "oats": 169,
+  "sorghum": 348,
+  "sunflower": 309,
+  "cotton": 615,
+  "alfalfa": 464,
+  "barley": 235,
+  "canola": 255
+ },
+ "source": "USDA NASS QuickStats 2016+"
+}

@@ -1,0 +1,8 @@
+{
+ "source": "USDA SSURGO",
+ "area": "Story County, Iowa",
+ "name": "Nicollet",
+ "slope_pct": 2.0,
+ "organic_matter_pct": 6.0,
+ "k_factor": 0.28
+}
