@@ -54,6 +54,8 @@ The backend can serve the built frontend, so one web service is enough (we use R
 - Start command: `cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT`
 - Environment variables: `EARTHDATA_TOKEN`, `NASS_API_KEY`
 
+There is also a `Dockerfile` in the repo root that does the same build (we use it on Railway).
+
 ## Data sources
 
 | Source | What we take | Key |
