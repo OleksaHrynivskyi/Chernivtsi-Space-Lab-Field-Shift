@@ -1,0 +1,291 @@
+/* Кольори і розміри */
+:root {
+  --bg: #f5f4f0;
+  --card: #ffffff;
+  --border: #e2ded5;
+  --text: #1f2421;
+  --muted: #5c625d;
+  --green: #3f6b3a;
+  --green-light: #e8efe6;
+  --amber: #b7791f;
+  --amber-light: #fbf3e4;
+  --red: #a1392b;
+  --blue: #2f6690;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', 'Source Sans 3', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 { font-size: 28px; margin: 0 0 4px; font-weight: 600; }
+h2 { font-size: 20px; margin: 0 0 4px; font-weight: 600; }
+h3 { font-size: 16px; margin: 0 0 4px; font-weight: 600; }
+p { margin: 0; }
+a { color: var(--green); }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+
+/* ---------- Верхня панель ---------- */
+.header { background: var(--card); border-bottom: 1px solid var(--border); }
+.header .container { display: flex; align-items: center; height: 56px; gap: 32px; }
+.logo { font-weight: 600; font-size: 18px; cursor: pointer; }
+.steps { display: flex; gap: 16px; margin: 0 auto; color: var(--muted); }
+.step { background: none; border: none; font: inherit; color: inherit; padding: 16px 0; cursor: pointer; border-bottom: 2px solid transparent; }
+.step.active { color: var(--green); font-weight: 600; border-bottom-color: var(--green); }
+.step:disabled { cursor: default; opacity: 0.6; }
+.link-button { background: none; border: none; font: inherit; color: var(--green); cursor: pointer; padding: 0; }
+
+/* Перемикач мови EN / УК */
+.lang-switch { display: inline-flex; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.lang-switch button { background: var(--card); border: none; padding: 4px 10px; font: inherit; font-size: 13px; color: var(--muted); cursor: pointer; }
+.lang-switch button + button { border-left: 1px solid var(--border); }
+.lang-switch button.active { background: var(--green-light); color: var(--green); font-weight: 600; }
+
+/* ---------- Сторінка ---------- */
+.page { padding-top: 32px; padding-bottom: 48px; }
+.page-title { margin-bottom: 24px; }
+.page-title-row { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; gap: 16px; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+.card-subtitle { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+
+.grid-2 { display: grid; grid-template-columns: 3fr 2fr; gap: 24px; }
+.grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stack { display: flex; flex-direction: column; gap: 24px; }
+
+.button {
+  background: var(--green); color: #fff; border: none; border-radius: var(--radius);
+  padding: 12px 24px; font: inherit; font-weight: 600; cursor: pointer;
+}
+.button:disabled { opacity: 0.6; cursor: wait; }
+.button.full { width: 100%; }
+.button.secondary { background: var(--card); color: var(--green); border: 1px solid var(--green); }
+
+.input {
+  width: 100%; padding: 12px 16px; font: inherit; border: 1px solid var(--border);
+  border-radius: var(--radius); background: var(--card);
+}
+
+.chips { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; }
+.chip {
+  border: 1px solid var(--border); background: var(--card); border-radius: var(--radius);
+  padding: 6px 16px; font: inherit; font-size: 14px; color: var(--muted); cursor: pointer;
+}
+.chip.active { border-color: var(--green); background: var(--green-light); color: var(--green); font-weight: 600; }
+
+.banner { background: var(--amber-light); border-left: 3px solid var(--amber); padding: 8px 16px; margin-bottom: 16px; font-size: 14px; }
+.error { color: var(--red); margin-top: 8px; font-size: 14px; }
+
+/* ---------- Поле ---------- */
+.map-card { padding: 0; overflow: hidden; }
+.map { height: 420px; }
+.map-footer { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-top: 1px solid var(--border); gap: 16px; }
+.layer-select { font: inherit; font-size: 14px; padding: 4px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+
+.slider-row { margin-bottom: 16px; }
+.slider-head { display: flex; justify-content: space-between; }
+.slider-row input[type='range'] { width: 100%; accent-color: var(--green); }
+.toggle-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; }
+.toggle-row input { width: 20px; height: 20px; accent-color: var(--green); }
+
+/* ---------- Статистика ---------- */
+.stat-label { color: var(--muted); font-size: 13px; }
+.stat-value { font-size: 28px; font-weight: 600; margin: 4px 0; }
+.stat-value.water { color: var(--blue); }
+.stat-note { color: var(--muted); font-size: 13px; }
+
+.legend { display: flex; gap: 24px; font-size: 13px; color: var(--muted); }
+.legend-dot { display: inline-block; width: 12px; height: 12px; margin-right: 6px; vertical-align: -1px; }
+
+.watch-item { border-left: 3px solid var(--amber); padding-left: 16px; margin-bottom: 16px; }
+.watch-item.high { border-left-color: var(--red); }
+
+/* ---------- Варіанти ---------- */
+.segmented { display: inline-flex; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.segmented button { background: var(--card); border: none; padding: 8px 16px; font: inherit; font-size: 14px; cursor: pointer; color: var(--muted); }
+.segmented button + button { border-left: 1px solid var(--border); }
+.segmented button.active { background: var(--green-light); color: var(--green); font-weight: 600; }
+
+.option-card { display: flex; flex-direction: column; gap: 16px; }
+.option-card.best { border: 2px solid var(--green); }
+.tag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: var(--radius); background: var(--border); color: var(--muted); }
+.tag.green { background: var(--green-light); color: var(--green); font-weight: 600; }
+.total-score { font-size: 36px; font-weight: 600; }
+.total-score span { font-size: 16px; color: var(--muted); font-weight: 400; }
+
+.score-row { margin-bottom: 8px; font-size: 13px; }
+.score-row .score-head { display: flex; justify-content: space-between; }
+.score-track { height: 6px; background: var(--bg); border-radius: 3px; }
+.score-fill { height: 6px; background: var(--green); border-radius: 3px; }
+
+.calendar { font-size: 11px; }
+.calendar-row { display: flex; align-items: center; margin-bottom: 6px; }
+.calendar-label { width: 44px; flex-shrink: 0; color: var(--muted); font-weight: 600; }
+/* доріжка календаря з лініями між місяцями */
+.calendar-track {
+  position: relative; flex: 1; height: 20px; border-radius: 3px;
+  background-color: var(--bg);
+  background-image: linear-gradient(to right, var(--border) 1px, transparent 1px);
+  background-size: calc(100% / 12) 100%;
+}
+/* біла обвідка, щоб дві культури поспіль не зливались */
+.calendar-bar { position: absolute; top: 3px; height: 14px; border-radius: 3px; box-shadow: 0 0 0 1.5px var(--card); }
+.calendar-months { display: flex; margin-left: 44px; color: var(--muted); }
+.calendar-months span { flex: 1; min-width: 0; text-align: center; }
+.calendar-legend { flex-wrap: wrap; gap: 8px 16px; margin-top: 10px; }
+.calendar-legend .legend-dot { border-radius: 2px; }
+
+/* Коли сіяти і збирати */
+.plan { margin-top: 16px; }
+.plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 8px 0; }
+.plan-year { background: var(--bg); border-radius: var(--radius); padding: 12px 16px; }
+.plan-year h4 { margin: 0 0 6px; font-size: 14px; }
+.plan-year ul { margin: 0; padding-left: 18px; font-size: 14px; }
+.plan-year li + li { margin-top: 4px; }
+
+/* ---------- Звіт ---------- */
+.details-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start; }
+.sticky { position: sticky; top: 24px; }
+.section + .section { margin-top: 24px; }
+.section ul { margin: 8px 0 0; padding-left: 20px; }
+.evidence-row { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+.check-local { background: var(--amber-light); border-radius: var(--radius); padding: 16px; }
+
+/* ---------- Футер ---------- */
+.footer { border-top: 1px solid var(--border); padding: 24px 0 32px; color: var(--muted); font-size: 13px; }
+
+.search-row { display: flex; gap: 8px; }
+.search-row .button { white-space: nowrap; }
+.grid-2-equal { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+/* Планшет: колонки одна під одною */
+@media (max-width: 900px) {
+  .grid-2, .grid-2-equal, .details-grid { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-5 { grid-template-columns: repeat(2, 1fr); }
+  /* вкладки переносимо в другий рядок шапки */
+  .header .container { flex-wrap: wrap; height: auto; gap: 8px 16px; padding-top: 8px; padding-bottom: 0; }
+  .header .link-button { margin-left: auto; }
+  .steps { order: 10; width: 100%; margin: 0; justify-content: space-between; gap: 4px; font-size: 14px; }
+  .steps .muted { display: none; }
+  .step { padding: 8px 0; }
+  .sticky { position: static; }
+}
+
+/* Телефон */
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+  .page { padding-top: 24px; padding-bottom: 32px; }
+  h1 { font-size: 24px; }
+  .card { padding: 16px; }
+  .grid-4 { grid-template-columns: 1fr; }
+  .grid-5 { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .stat-value { font-size: 22px; }
+  .map { height: 300px; }
+  .map-footer, .page-title-row { flex-direction: column; align-items: flex-start; }
+  .search-row { flex-direction: column; }
+  .evidence-row { flex-direction: column; gap: 4px; }
+  .legend { margin-left: 0 !important; margin-right: 0; }
+  .legend { flex-wrap: wrap; gap: 8px 16px; }
+  .segmented { display: flex; flex-wrap: wrap; }
+  .segmented button { flex: 1; }
+}
+
+/* поза США клікати не можна */
+.outside-us { cursor: not-allowed; }
+
+/* ---------- Порада, порівняння словами ---------- */
+.result-card { display: flex; flex-direction: column; gap: 8px; }
+.result-card .tag { align-self: flex-start; }
+.result-name { font-size: 28px; margin-top: 8px; }
+.result-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 32px; margin-top: 16px; }
+.result-grid ul { margin: 8px 0 0; padding-left: 20px; }
+.button-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-top: 24px; }
+
+.compare-words { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.compare-row { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.compare-value { font-weight: 600; white-space: nowrap; }
+.compare-value.better { color: var(--green); }
+.compare-value.same { color: var(--muted); }
+.compare-value.worse { color: var(--red); }
+
+/* шапка картки однакової висоти, щоб бали стояли рівно */
+.option-head { min-height: 136px; display: flex; flex-direction: column; gap: 8px; }
+
+/* підписи карток у 2 рядки, щоб числа стояли рівно */
+.stat-card { display: flex; flex-direction: column; }
+.stat-label { min-height: 2.6em; }
+.watch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 24px; }
+
+/* ---------- Деталі ---------- */
+.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.evidence-tags { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; align-items: flex-start; align-self: flex-start; flex-shrink: 0; max-width: 45%; }
+
+/* ---------- Смуга прогресу аналізу ---------- */
+.progress { margin-top: 16px; }
+.progress-track { height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--green); border-radius: 4px; transition: width 0.2s linear; }
+.progress-text { display: flex; justify-content: space-between; gap: 8px; margin: 8px 0 4px; font-size: 14px; }
+
+/* Нижня панель карти: шари NASA */
+.map-controls { display: inline-flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .result-grid, .two-columns { grid-template-columns: 1fr; }
+  .option-head { min-height: 0; }
+}
+@media (max-width: 600px) {
+  .header .container { flex-wrap: wrap; height: auto; padding-top: 8px; padding-bottom: 8px; gap: 8px 12px; }
+  .result-name { font-size: 22px; }
+  .stat-label { min-height: 0; }
+  .evidence-tags { max-width: none; justify-content: flex-start; }
+}
+
+
+/* вкладки зверху */
+.steps { gap: 24px; }
+.active-link { font-weight: 600; text-decoration: underline; text-underline-offset: 6px; }
+
+/* підказка з 3 кроків на першій сторінці */
+.howto { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 16px 0 0; padding: 0; list-style: none; counter-reset: howto; }
+.howto li { counter-increment: howto; display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.howto li::before {
+  content: counter(howto); display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: 50%; background: var(--green); color: #fff; font-size: 12px; font-weight: 600;
+}
+@media (max-width: 900px) {
+  .steps { gap: 4px; }
+}
+
+
+/* Підказка над стовпцем графіка */
+.chart-tooltip { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 8px 10px; font-size: 13px; }
+
+/* ---------- Друк і PDF (звіт) ---------- */
+.print-only { display: none; }
+@media print {
+  /* без цього браузер не друкує кольорові фони (смуги календаря зникають) */
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #fff; }
+  .header, .no-print { display: none !important; }
+  .print-only { display: block; margin: 0; }
+  .page { padding-top: 0; }
+  /* при друку все в одну колонку */
+  .details-grid, .two-columns { display: block; }
+  .details-grid > .card + .card, .two-columns > * + * { margin-top: 16px; }
+  .sticky { position: static; }
+  .card { box-shadow: none; }
+  .evidence-row, .plan-year, .check-local, .calendar, .score-row { break-inside: avoid; }
+  h1, h2, h3 { break-after: avoid; }
+}
